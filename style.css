@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gameboard {
+  width: fit-content;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background: linear-gradient(150deg, #f731db, #4600f1 100%);
+}
+.buttons {
+  margin: auto;
+  height: auto;
+  width: 80vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #00ff9db6;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+.button:hover {
+  background: #3761eeb9;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+.output {
+  height: auto;
+  width: 80vh;
+  min-height: 20vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.output div {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: space-evenly;
+  font-weight: 3rem;
+  color: #fff;
+}
+.output div div {
+  margin: 10px;
+}
+.winnerOuput {
+  font-size: 3rem;
+}
